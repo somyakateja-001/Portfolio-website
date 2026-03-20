@@ -9,14 +9,10 @@ body {
 
 /* --------- NAVBAR --------- */
 
-
-/* --------- NAVBAR --------- */
-
 .navbar {
   background: white;
   padding: 18px 0;
   border-bottom: 1px solid #ddd;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -30,15 +26,14 @@ body {
   font-size: 16px;
 }
 
-/* --------- MOBILE ADJUSTMENT --------- */
+/* --------- MOBILE NAV FIX --------- */
 
 @media (max-width: 768px) {
 
   .navbar {
-    display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    justify-content: flex-start;
+    justify-content: center; /* FIXED */
     padding: 10px;
   }
 
@@ -48,8 +43,8 @@ body {
     margin-right: 15px;
     white-space: nowrap;
   }
-
 }
+
 /* --------- HERO --------- */
 
 .hero {
@@ -275,6 +270,7 @@ footer {
 /* --------- RESPONSIVE DESIGN --------- */
 
 @media (max-width: 768px) {
+
   .hero h1 {
     font-size: 32px;
   }
